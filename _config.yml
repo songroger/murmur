@@ -5,7 +5,7 @@ permalink: /:title/
 avatar: http://7xof48.com1.z0.glb.clouddn.com/avatar.jpg
 about: http://7xof48.com1.z0.glb.clouddn.com/about.jpg
 favicon: http://7xof48.com1.z0.glb.clouddn.com/favicon.png
-basecss: http://7xof48.com1.z0.glb.clouddn.com/songroger/main.min0001.css
+basecss: 
 # Theme specific configuration
 title: songroger
 description: >

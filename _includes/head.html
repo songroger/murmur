@@ -1,0 +1,39 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="songroger">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
+
+  <!-- Open graph data -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:url" content="{% if page.title %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
+
+  <!-- Standard Stuff -->
+  <link rel="canonical" href="{% if page.title %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ site.favicon }}">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Styles -->
+  {% if site.basecss %}
+    <link rel="stylesheet" href="{{ site.basecss }}">
+  {% else %}
+    <style type="text/css">
+      {% include css/main.css %}
+    </style>
+  {% endif %}
+
+
+</head>

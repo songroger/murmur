@@ -1,0 +1,104 @@
+/* Default values */
+
+/* font-size: 109.375%; */
+/* font-size: my value * default browser font size * line height multiplier; */
+/* font-size: 109.375% * 16; */
+/* font-size: 17.5px; */
+
+/* line-height: 1.6rem; */
+/* line-height: font size * line height multiplier; */
+/* line-height: 17.5 * 1.6; */
+/* line-height: 28px; */
+
+
+/* Min width 700px */
+
+/* font-size: 132.8125%; */
+/* font-size: my value * default browser font size * line height multiplier; */
+/* font-size: 132.8125% * 16; */
+/* font-size: 21.25px; */
+
+/* line-height: 1.6rem; */
+/* line-height: font size * line height multiplier; */
+/* line-height: 21.25 * 1.6; */
+/* line-height: 34px; */
+
+::selection {
+  background: var(--color1);
+  color: #fff;
+  text-shadow: none;
+}
+
+:root {
+  --color-text: #444;
+  --color-border: #eee;
+  --color1: #1565C0;
+  --color2: #999;
+  --title-font: Georgia,"Microsoft YaHei",sans-serif;
+}
+
+html {
+  font-size: 109.375%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 140.625%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-text);
+  font-family: Georgia,'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+
+
+/*  background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px);
+  background-size: 100% 28px;*/
+
+
+}
+
+/*@media screen and (min-width: 700px) {
+  body {
+    background-size: 100% 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: 100% 36px;
+  }
+}*/
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+a:hover, a:visited, a:active {
+  color: #444;
+  text-decoration: none;
+}

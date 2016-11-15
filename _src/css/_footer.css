@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 0.5rem;
+  padding: 1.6rem 0;
+  box-shadow: inset 0 1px 0 var(--color-border);
+  .col {
+	  font-size: 13px;
+	  text-align: center;
+  }
+}
+
+.subscribe {
+  color: var(--color2);
+  transition:all 0.25s ease-in;
+  &:hover {
+      color: var(--color-text);
+      text-decoration: none;
+    }
+}
+

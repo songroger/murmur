@@ -1,4 +1,5 @@
 # Site configuration
+domain: "http://songroger.win"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://songroger.github.io/" # the base hostname & protocol for your site
 permalink: /:title/

@@ -26,8 +26,11 @@ exclude: ['node_modules', 'gulpfile.js', 'package.json']
 kramdown:
   input: GFM
 
-gems: ['jekyll-paginate']
+# If U enable the comment, edit disqus or duoshuo account of "/_layouts/page.html"
+# before deploy your webpage
+enable_comment: true
 
+gems: ['jekyll-paginate']
 # Pagination
 paginate: 5
-paginate_path: /page:num
+paginate_path: /archive/page:num

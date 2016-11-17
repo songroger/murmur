@@ -1,0 +1,26 @@
+.arch-item {
+    margin-bottom: 10px;
+    animation: itemshow 0.9s linear;
+}
+
+.arch-title {
+    color: var(--color-text);
+    font-size: 20px;
+    font-family: Georgia,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-weight: bold;
+    padding-right: 10px;
+    &:hover {
+      color: var(--color2);
+      transition:all 0.25s ease-in;
+    }
+}
+
+time {
+    color: var(--color2);
+    font-size: 15px;
+    font-family: Optima,"Helvetica Neue",sans-serif;
+}
+
+.arch-desc {
+    color: var(--color2);
+}

@@ -1,0 +1,28 @@
+---
+layout: page
+title: Archive
+---
+
+<ul>
+  {%for post in paginator.posts %}
+    <div class="arch-item">
+      <li>
+        <a href="{{ post.url }}" class="arch-title">{{ post.title }}</a>
+        <time>{{ post.date | date:"%b.%d, %Y" }}</time>
+      </li>
+      {% if post.description %}<div class="arch-desc">{{ post.description }}</div>{% endif %}
+    </div>
+  {% endfor %}
+</ul>
+
+    <nav class="blocks blocks--space">
+      <div class="blocks__item">
+        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">Previous</a>{% endif %}
+      </div>
+      <div class="blocks__item">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+      </div>
+      <div class="blocks__item">
+        {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}">Next</a>{% endif %}
+      </div>
+    </nav>

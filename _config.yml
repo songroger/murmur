@@ -26,7 +26,7 @@ exclude: ['node_modules', 'gulpfile.js', 'package.json']
 kramdown:
   input: GFM
 
-# If U enable the comment, edit disqus or duoshuo account of "/_layouts/page.html"
+# If U enable the comment, edit disqus or duoshuo account of "/_layouts/post.html"
 # before deploy your webpage
 enable_comment: true
 

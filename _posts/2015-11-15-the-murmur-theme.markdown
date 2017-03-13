@@ -7,6 +7,7 @@ author: songroger
 cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/600px-Meisje_met_de_parel.jpg"
 location: Florence, Italy
 description: Murmur theme presents your words & photographs in a handsome, agreeable manner.
+tail: I'm a tail
 ---
 ---
 Landing somewhere between a scholarly publication and an adventurers notebook, the Murmur theme presents your words & photographs in a handsome, agreeable manner. It is well behaved on both mobile & desktop and radically minimal in its footprint. Charged and ready for deployment to Github Pages.

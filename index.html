@@ -9,7 +9,7 @@ layout: default
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
       <time class="article__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-      <p class="article__excerpt">{{ post.excerpt }}</p>
+      <p class="article__excerpt">{{ post.excerpt | truncate: 160 }}</p>
       <a href="{{ post.url | prepend: site.baseurl }}" class="article__more">Read more »</a>
     </article>
     <!-- / article -->

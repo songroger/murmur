@@ -38,9 +38,9 @@
 
 .article__title {
   margin-bottom: .8rem;
-  font-size: 1.999rem;
+  /*font-size: 1.999rem;*/
   &--single {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
     font-family: var(--title-font);
   }
 

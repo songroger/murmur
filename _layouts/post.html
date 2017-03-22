@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="article">
-  <h1 class="article__title article__title--single">{{ page.title }}</h1>
+  <h2 class="article__title article__title--single">{{ page.title }}</h2>
   <time class="article__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{% if page.author %}By {{ page.author}} on {% endif %}{{ page.date | date: " %H:%M %b.%d-%Y" }}</time>
   {% if page.cover %}
     <div class="cover">

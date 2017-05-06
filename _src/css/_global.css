@@ -68,7 +68,7 @@ html {
 
 body {
   color: var(--color-text);
-  font-family: Georgia,'Source Sans Pro', sans-serif;
+  font-family: -apple-system, Georgia,'Source Sans Pro', sans-serif, BlinkMacSystemFont, Roboto, Helvetica, Arial;
   font-size: 0.9rem;
   line-height: 1.6rem;
 

@@ -112,8 +112,9 @@ Tags： 数学 英语 Markdown
 
 使用 ~~ 表示删除线。
 
-~~这是一段错误的文本。~~
+~~This is [github][link]~~.
 
+[link]: http://github.com/
 ### 3. 注脚
 
 使用 [^keyword] 表示注脚。

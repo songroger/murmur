@@ -39,25 +39,47 @@ layout: default
 <!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
 
 <!-- disqus 评论-->
-<!-- <div id="disqus_thread"></div>
+<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'songroger'; // required: replace example with your forum shortname
+    var disqus_shortname = "{{ site.disqus_account }}"; // required: replace example with your forum shortname
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
+    function t() {
+        /* * * DON'T EDIT BELOW THIS LINE * * */
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+    }
+    function e() {
+        var t = document.getElementById("disqus_thread");
+        t.innerHTML = "<h4>网络被限制, 无法加载Disqus</h4>";
+    }
+    function init() {
+        var xhr = new XMLHttpRequest;
+        xhr.open("GET", "https://disqus.com/next/config.json?" + +new Date, !0),
+        xhr.timeout = 1e3,
+        xhr.onload = function() {
+            t()
+        },
+        xhr.ontimeout = function() {
+            e(),
+            xhr.abort()
+        },
+        xhr.onerror = function() {
+            e()
+        },
+        xhr.send()
+    }
+    window.onload=init;
+
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="songroger" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
+<!-- <div class="ds-thread" data-thread-key="songroger" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div> -->
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var duoshuoQuery = {short_name:"songroger"};
   (function() {
     var ds = document.createElement('script');
@@ -67,6 +89,6 @@ var duoshuoQuery = {short_name:"songroger"};
     (document.getElementsByTagName('head')[0] 
      || document.getElementsByTagName('body')[0]).appendChild(ds);
   })();
-  </script>
+  </script> -->
 <!-- 多说公共JS代码 end -->
 {% endif %}

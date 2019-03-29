@@ -1,11 +1,11 @@
 # Site configuration
 domain: "http://songroger.win"
-baseurl: "/murmur/" # the subpath of your site, e.g. /blog/
+baseurl: "/murmur" # the subpath of your site, e.g. /blog
 url: "http://songroger.github.io/" # the base hostname & protocol for your site
 permalink: /:title/
-avatar: /assets/avatar.jpg
-about: /assets/about.jpg
-favicon: /assets/favicon.ico
+avatar: /murmur/assets/avatar.jpg
+about: /murmur/assets/about.jpg
+favicon: /murmur/assets/favicon.ico
 basecss: 
 # Theme specific configuration
 title: songroger

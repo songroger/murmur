@@ -1,6 +1,6 @@
 # Site configuration
 domain: "http://songroger.win"
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/murmur/" # the subpath of your site, e.g. /blog/
 url: "http://songroger.github.io/" # the base hostname & protocol for your site
 permalink: /:title/
 avatar: /assets/avatar.jpg
@@ -28,8 +28,8 @@ kramdown:
 
 # If U enable the comment, edit disqus or duoshuo account
 # before deploy your webpage
-enable_comment: true
-disqus_account: songroger
+enable_comment: false
+# disqus_account: songroger
 
 gems: ['jekyll-paginate']
 # Pagination

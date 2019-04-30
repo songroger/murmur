@@ -49,6 +49,7 @@ gulp.task('styles', () => {
     .pipe(postcss(processors))
     .pipe(nano({
           //the following option is for :CSS3 Animation is missing after minify
+          autoprefixer: false,
           reduceIdents: {
               keyframes: false
           },

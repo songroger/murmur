@@ -35,6 +35,10 @@
   --color1: #1565C0;
   --color2: #999;
   --title-font: Georgia,"Microsoft YaHei",sans-serif;
+
+  --color-desc: #f9f8e9;
+  --particle-len: 50px;
+  --particle-color: #FC3C3C;
 }
 
 html {
@@ -68,7 +72,7 @@ html {
 
 body {
   color: var(--color-text);
-  font-family: -apple-system, Georgia,'Source Sans Pro', sans-serif, BlinkMacSystemFont, Roboto, Helvetica, Arial;
+  font-family: Georgia,'Source Sans Pro', sans-serif;
   font-size: 0.9rem;
   line-height: 1.6rem;
 
@@ -101,4 +105,11 @@ img {
 a:hover, a:visited, a:active {
   color: #444;
   text-decoration: none;
+}
+
+time {
+  color: var(--color2);
+  font-size: 15px;
+  font-family: "Segoe UI",Optima,"Helvetica Neue",sans-serif;
+  text-transform: uppercase;
 }

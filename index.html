@@ -2,18 +2,41 @@
 layout: default
 ---
 
-  {% for post in site.posts limit:3 %}
-    <!-- article -->
+  <!-- article -->
+  {% for post in site.posts limit:10 %}
     <article class="article">
       <h2 class="article__title">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
       </h2>
-      <time class="article__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-      <p class="article__excerpt">{{ post.excerpt | truncate: 160 }}</p>
-      <a href="{{ post.url | prepend: site.baseurl }}" class="article__more">Read more »</a>
+      {% if post.cover_display %}
+        <a class="article__cover_thumbnail" href="{{ post.url | prepend: site.baseurl }}">
+            <div class="article_cover_image">
+                <div style="background-image:url('{{ post.cover | prepend: site.baseurl }}')"></div>
+            </div>
+            <div class="article_cover_desc">
+                <p class="article__excerpt">
+                  {% if post.description %}
+                    {{ post.description | truncate: 100 }}
+                  {% else %}
+                  {% endif %}
+              </p>
+            </div>
+        </a>
+      {% else %}
+        <p class="article__excerpt">
+            {% if post.description %}
+              {{ post.description }}
+            {% else %}
+            {% endif %}
+        </p>
+      {% endif %}
     </article>
-    <!-- / article -->
   {% endfor %}
+  <!-- / article -->
+  <span class="article__align-right">
+      <a href="/archive/">more</a>
+  </span>
 
     <!-- <nav class="blocks blocks--space">
       <div class="blocks__item">

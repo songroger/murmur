@@ -12,7 +12,7 @@ layout: default
       {% if post.cover_display %}
         <a class="article__cover_thumbnail" href="{{ post.url | prepend: site.baseurl }}">
             <div class="article_cover_image">
-                <div style="background-image:url('{{ post.cover | prepend: site.baseurl }}')"></div>
+                <div style="background-image:url('{{ post.cover }}')"></div>
             </div>
             <div class="article_cover_desc">
                 <p class="article__excerpt">

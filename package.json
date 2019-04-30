@@ -1,0 +1,32 @@
+{
+  "name": "songroger.win",
+  "version": "1.0.0",
+  "description": "powered by jekyll",
+  "author": "songroger",
+  "keywords": [
+    "css",
+    "gulp",
+    "scss",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "jekyll"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/songroger/songroger.github.io"
+  },
+  "homepage": "https://songroger.github.io",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "2.12.12",
+    "gulp": "~3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-uglify": "1.5.4",
+    "postcss-calc": "^5.2.1",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^8.1.0",
+    "postcss-nested": "^1.0.0"
+  }
+}

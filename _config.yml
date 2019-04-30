@@ -31,7 +31,10 @@ kramdown:
 enable_comment: false
 # disqus_account: songroger
 
-gems: ['jekyll-paginate']
+# gems: ['jekyll-paginate']
 # Pagination
 paginate: 5
 paginate_path: /archive/page:num
+
+plugins:
+    - jekyll-paginate

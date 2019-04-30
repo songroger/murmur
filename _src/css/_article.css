@@ -174,6 +174,34 @@
     }
 }
 
+.footnote {
+    background-color:  rgba(0,0,0,.18);
+    display:  inline-block;
+    width: 15px;
+    color:  white;
+    text-align:  center;
+    border-radius: 14px;
+    font: 700 8px/14px -apple-system,BlinkMacSystemFont,Helvetica Neue,sans-serif;
+    vertical-align: middle;
+    &:hover, &:visited {
+      color: #fff;
+      background-color:  rgba(0,0,0,.98);
+    }
+}
+
+.footnotes {
+    &::before {
+      color: rgba(0,0,0,.5);
+      content: "* * *";
+      display: block;
+      text-align: center;
+    }
+    font-size: 80%;
+    line-height:  1.32;
+    padding: 10px 10px 0px;
+    opacity: .8;
+}
+
 .post-tags {
   text-align: right;
   text-decoration: none;

@@ -102,3 +102,10 @@ a:hover, a:visited, a:active {
   color: #444;
   text-decoration: none;
 }
+
+time {
+  color: var(--color2);
+  font-size: 15px;
+  font-family: "Segoe UI",Optima,"Helvetica Neue",sans-serif;
+  text-transform: uppercase;
+}

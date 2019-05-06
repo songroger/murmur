@@ -38,6 +38,9 @@
   -moz-animation: itemshow 0.9s linear;
   border-bottom: 1px solid rgba(0,0,0,.04);
   padding: 20px 0 20px;
+  .cover {
+    margin-bottom: 10px;
+  }
 }
 
 .article__title {

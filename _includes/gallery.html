@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="{{ site.gallery_css }}">
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div id="links">
+    {%for g in site.gallery %}
+    <a href="{{ g.url }}" title="{{ g.title }}">
+        <!-- <img src="/murmur/assets/avatar.jpg" alt="Banana"> -->
+    </a>
+    {% endfor %}
+</div>
+<script src="{{ site.gallery_js }}"></script>
+<script>
+    var fullscreenOptions = {
+    // Defines if the gallery should open in fullscreen mode:
+    fullScreen: true,
+};
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>

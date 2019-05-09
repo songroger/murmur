@@ -21,6 +21,16 @@ facebook_username: song.roger.1
 instagram_username: songroger198
 linkedin_username: songroger
 
+# Gallery
+gallery_css: /murmur/assets/css/blueimp-gallery.min.css
+gallery_js: /murmur/assets/js/blueimp-gallery.min.js
+gallery:
+  [{"title": "album",
+    "url": /murmur/assets/about.jpg},
+  {"title": "avatar",
+    "url": /murmur/assets/avatar.jpg}
+]
+
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
 
 kramdown:

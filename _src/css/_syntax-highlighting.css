@@ -113,6 +113,7 @@ code {
 
   .kd {
     font-weight: 400;
+    color: #d73a49;
   } /* Keyword.Declaration */
 
   .kp {
@@ -182,6 +183,10 @@ code {
   .nv {
     color: #008080;
   } /* Name.Variable */
+
+  .nx {
+    color: #6f42c1;
+  }
 
   .ow {
     font-weight: 400;
